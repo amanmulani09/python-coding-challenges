@@ -1,4 +1,3 @@
-# cd dev/allthings@i/python/python-coding-challenges/patterns
 class Pattern:
     
     def pattern(self,n):
