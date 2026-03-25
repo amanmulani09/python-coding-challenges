@@ -4,12 +4,14 @@ class Math:
     
     def count_digit(_self,n):
         count = 0
+        
         while n > 0:
+            count += 1 # increase the count on every iteration till n keep in positive
             
-            count+=1 # increase the count in every iteration
-            # print(n, "before")
-            n = n // 10 # remove the last digit till makes it less than or equal to zero
-            # print(n, "after")
+            n = n // 10 # divide the n by 10 to shrink it by 1 digit
+            
+            print('i am N', n)
+            
         return count
     
 
@@ -30,8 +32,7 @@ class Math:
             
 
 # sol= Math()
-# res = sol.count_digit(1234)
+# res = sol.count_digit(7842)
 # print(res)
 
-sol = Math()
-print(sol.reverse_digit(1234))
+print(Math().reverse_digit(1234))
