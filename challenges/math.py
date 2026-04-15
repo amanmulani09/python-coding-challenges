@@ -2,7 +2,7 @@
 
 class Math:
     
-    def count_digit(_self,n):
+    def count_digit(_self,n:int):
         count = 0
         
         while n > 0:
@@ -15,7 +15,7 @@ class Math:
         return count
     
 
-    def reverse_digit(_self,n):
+    def reverse_digit(_self,n:int):
         
         revNum = 0
         
