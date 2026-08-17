@@ -44,8 +44,28 @@ an even index number in given string.
 def modify_str(s:str):
     if(len(s) < 1):
         return ''
-    for index,char in enumerate(s):
+    for index,v in enumerate(s):
        if(index % 2 == 0):
-           print(char)
+           print(v)
 
-# modify_str('pynative')
+nums = [1,2,3,4,5,6,7,8,9,10]
+
+def travers_list(nums:list[int])->None:
+    
+    for i,v in enumerate(nums):
+        if i % 2 == 0:
+            print(v)
+            
+# travers_list(nums)
+
+# ------------------------------------------------------------------------------------------
+
+"""
+Practice Problem: Write a function to remove characters from a string starting from
+index 0 up to n and return a new string.
+"""
+# substring = s[start : end : step]
+def subs_tring(s:str,start:int)-> str:
+    return s[start:]
+
+print(subs_tring("pynative",2))
