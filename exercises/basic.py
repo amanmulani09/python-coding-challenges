@@ -19,3 +19,19 @@ def get_product(first:int,second:int) -> int:
 
 # ------------------------------------------------------------------------------------------
 
+"""
+Practice Problem: Iterate through the first 10 numbers (0–9). In each iteration, 
+print the current number, the previous number, and their sum.
+"""
+
+def get_range(num:int) -> None:
+    
+    prev_num = 0
+    for i in range(0, num):
+        sum = prev_num + i
+        print(f"current : {i} prev: {prev_num} sum : {sum} ")
+        prev_num = i
+        
+# get_range(10)
+
+# ------------------------------------------------------------------------------------------
