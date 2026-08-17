@@ -35,3 +35,17 @@ def get_range(num:int) -> None:
 # get_range(10)
 
 # ------------------------------------------------------------------------------------------
+
+"""
+Practice Problem: Display only those characters which are present at
+an even index number in given string.
+"""
+
+def modify_str(s:str):
+    if(len(s) < 1):
+        return ''
+    for index,char in enumerate(s):
+       if(index % 2 == 0):
+           print(char)
+
+# modify_str('pynative')
