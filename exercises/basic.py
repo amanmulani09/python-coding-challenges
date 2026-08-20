@@ -68,4 +68,26 @@ index 0 up to n and return a new string.
 def subs_tring(s:str,start:int)-> str:
     return s[start:]
 
-print(subs_tring("pynative",2))
+# print(subs_tring("pynative",2))
+
+# ------------------------------------------------------------------------------------------
+
+# Exercise 5. Variable Swapping (The In-Place Method)
+
+a = 10
+b = 20
+# print(f'before:  {a},{b}')
+a,b = b,a
+# print(f'before:  {a},{b}')
+
+# ------------------------------------------------------------------------------------------
+
+# Exercise 6. Calculating Factorial with a Loop
+
+def calc_factorial(n:int,factorial:int=1):
+    
+    for i in range(1, n + 1):
+        factorial  = factorial* i
+    print(factorial)    
+
+calc_factorial(5)
