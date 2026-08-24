@@ -1,5 +1,3 @@
-
-
 class Math:
     
     def count_digit(_self,n:int):
