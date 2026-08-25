@@ -105,7 +105,7 @@ fruits.append("mango")
 fruits.pop(1)
 # print(fruits)
 
-#------------------------------------------------------------------------------------------
+# ------------------------------------------------------------------------------------------
 
 """
 Practice Problem: Write a program that takes a string and reverses it 
@@ -124,3 +124,20 @@ def reverse_str_loop(s:str)->str:
     return output
 
 # print(reverse_str_loop("aman"))
+
+# ------------------------------------------------------------------------------------------
+"""
+Practice Problem: Write a program to count the total number of vowels
+(a, e, i, o, u) present in a given sentence.
+"""
+
+def get_vowels_count(sentense:str) -> int:
+    
+    vowels = 'aeiou'
+    count = 0
+    for char in sentense.lower():
+        if char in vowels:
+            count+=1
+    return count
+
+print(get_vowels_count("Learning Python is fun!"))
