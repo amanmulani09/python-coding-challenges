@@ -90,4 +90,19 @@ def calc_factorial(n:int,factorial:int=1):
         factorial  = factorial* i
     print(factorial)    
 
-calc_factorial(5)
+# calc_factorial(5)
+
+# ------------------------------------------------------------------------------------------
+
+"""
+Practice Problem: Create a list of 5 fruits. Add a new fruit to the end of the list,
+then remove the second fruit (at index 1).
+"""
+
+fruits = ["apple","banana","grapes","papaya","orange"]
+
+fruits.append("mango")
+fruits.pop(1)
+# print(fruits)
+
+#------------------------------------------------------------------------------------------
