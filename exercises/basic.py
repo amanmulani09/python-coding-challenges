@@ -106,3 +106,21 @@ fruits.pop(1)
 # print(fruits)
 
 #------------------------------------------------------------------------------------------
+
+"""
+Practice Problem: Write a program that takes a string and reverses it 
+(e.g., “Python” becomes “nohtyP”).
+"""
+
+def reverse_str(s:str)->str:
+    return s[::-1]
+
+# print(reverse_str("aman"))
+
+def reverse_str_loop(s:str)->str:
+    output = ''
+    for i in range(len(s)-1, -1, -1):
+        output+=s[i]
+    return output
+
+# print(reverse_str_loop("aman"))
