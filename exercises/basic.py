@@ -140,4 +140,54 @@ def get_vowels_count(sentense:str) -> int:
             count+=1
     return count
 
-print(get_vowels_count("Learning Python is fun!"))
+# print(get_vowels_count("Learning Python is fun!"))
+
+# ------------------------------------------------------------------------------------------
+
+# Practice Problem: Given a list of integers, find and print both the largest and the smallest numbers.
+
+def get_min_max_num(nums:list[int]):
+    
+    min = nums[0]
+    max = nums[0]
+    
+    for num in nums:
+        if(num <= min):
+            min = num
+        if (num >= max):
+            max = num
+            
+    return {
+        "Smallest":min,
+        "Largest":max
+    }
+    
+# print(get_min_max_num([45, 2, 89, 12, 7]))
+
+def get_min_max_method(nums:list[int]):
+    
+    smallest = min(nums)
+    largest = max(nums)
+    
+    return {
+        "Smallest":smallest,
+        "Largest":largest
+    }
+
+# print(get_min_max_method([45, 2, 89, 12, 7]))
+
+# ------------------------------------------------------------------------------------------
+
+# Exercise 11. Removing Duplicates from a List
+
+def remove_duplicate(numlist:list[int]) -> list[int]:
+    
+    temp = []
+    
+    for item in numlist:
+        if item not in temp:
+            temp.append(item)
+    
+    return temp
+
+# print(remove_duplicate([1, 2, 2, 3, 4, 4, 4, 5]))
