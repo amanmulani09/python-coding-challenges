@@ -191,3 +191,22 @@ def remove_duplicate(numlist:list[int]) -> list[int]:
     return temp
 
 # print(remove_duplicate([1, 2, 2, 3, 4, 4, 4, 5]))
+
+# ------------------------------------------------------------------------------------------
+
+# Exercise 12. List Comparison and Boolean Logic
+
+"""
+Practice Problem: Write a function to return True if the first and last number of a
+given list is the same. If the numbers are different, return False.
+"""
+
+def check_first_and_last_item(items:list[int]) -> bool:
+    
+    return items[0] == items[-1]
+
+
+# print(check_first_and_last_item([10, 20, 30, 40, 10]))
+# print(check_first_and_last_item([75, 65, 35, 75, 30]))
+
+# ------------------------------------------------------------------------------------------
