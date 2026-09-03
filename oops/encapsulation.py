@@ -18,3 +18,4 @@ class BankAccount:
 
 # --- Interacting with the Object ---
 account = BankAccount("Alice", 1000)
+print(account.get_balance())
